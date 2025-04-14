@@ -1,0 +1,226 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+:root {
+    --title-color: hsl(50, 48%, 56%);
+    --text-color-gray-light: hsl(240, 6%, 90%);
+    --text-color-gray: hsl(240, 4%, 46%);
+    --button-color: hsl(50, 48%, 56%);
+    --button-color-hover: hsl(50, 48%, 66%);
+    --font-display-color: #cccccc; 
+    --bg-display-color: #333333;
+    --bg-div-display: #cccccc;
+    --bg-pattern: #101012;
+    --font-display: "Helvetica Neue", sans-serif;
+    font-family: "Karla", sans-serif;
+    --font-title: "Overpass", sans-serif;
+    --cinza-claro: #333333;
+    --cinza-escuro:#313131;
+    --cinza-escuro-forte:#2B2B2B;
+    --preto-medio: #101012;
+    --preto-fosco: #0D0D0D;
+}
+   
+@layer utilities {
+  
+    /* Animação de rolagem infinita */
+    @keyframes infinite-scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-50% - 45px));
+      }
+    }
+
+    @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+    }
+  
+    /* Classes de animação */
+
+    .gradient-animated {
+        background: linear-gradient(to right, #a855f7, #ec4899, #eab308, #ec4899, #a855f7, #ec4899, #eab308);
+        background-size: 300% 300%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: white;
+        border: 1px solid white;
+        transition: background-position 0.3s ease;
+    }
+      
+    .gradient-animated:hover {
+        animation: gradient 2s linear infinite;
+        color: transparent;
+        transform: scale(1.01)
+    }
+  
+    .animate-infinite-scroll {
+      animation: infinite-scroll 20s linear infinite;
+    }
+
+    .animate-infinite-scroll:hover {
+        animation-play-state: paused;
+    }
+
+    .text-shadow {
+        text-shadow: 1px 1px 3px #0000009e;
+    }
+
+    .background-gradient {
+        /* background: linear-gradient(90deg, black, transparent, transparent); */
+        background: linear-gradient(90deg, black, #8B8B8E, black);
+        /* @apply bg-gradient-to-r-l from-slate-900 to-gray-500; */
+    }
+
+    .radial-gradient {
+        background: radial-gradient(circle at center, rgba(255,255,255,0.055) 20%, transparent 60%);
+    }
+  }
+
+@layer components {
+
+    .standard-padding {
+        @apply flex xl:py-4 px-14;
+    }
+
+    /*TEXT DECORATION*/
+    .title-style {
+        @apply text-(--title-color) uppercase md:text-3xl text-2xl tracking-wider;
+    }
+
+    .new-title {
+        @apply text-(--bg-display-color) font-(family-name:--font-title) font-extrabold md:text-5xl text-3xl uppercase;
+    }
+
+    /*BUTTONS*/
+
+    .button-two {
+        @apply bg-transparent text-[#CCCCCC] border border-[#CCCCCC] hover:bg-[#CCCCCC] transition hover:text-black py-2 px-8 rounded-full cursor-pointer mt-2;
+    }
+
+    .button-three {
+        @apply bg-transparent text-[#CCCCCC] border border-[#CCCCCC] hover:bg-(--button-color) hover:border-(--button-color) transition hover:text-black py-2 px-8 rounded-full cursor-pointer mt-2;
+    }
+
+
+    .title-style-black {
+        @apply uppercase text-3xl;
+    }
+
+    .text-style {
+        @apply text-(--text-color-gray) leading-relaxed;
+    }
+
+    .big-title {
+        @apply text-(--title-color) uppercase font-black text-3xl md:text-4xl md:w-[40vw];
+    }
+
+    .text-gradient-box {
+       @apply flex flex-col gap-5 h-screen justify-end;
+    }
+
+    .div-overlay {
+        @apply bg-gray-600 bg-blend-overlay bg-cover bg-center h-screen w-full;
+    }
+
+    /* → ------------ Classes dos cards ------------ ← */
+    .box-cards {
+        @apply flex flex-wrap justify-center text-center gap-8 p-2 w-full;
+    }
+    .box-cards-new {
+        @apply flex flex-col md:flex-row flex-wrap justify-center text-center gap-8 items-center w-full;
+    }
+    .box-cards2 {
+        @apply flex flex-wrap justify-center gap-8 p-2;
+    }
+    .box-cards_card {
+        @apply p-5 max-w-sm shadow-[0px_0px_16px_5px_rgba(0,_0,_0,_0.1)] rounded-2xl;
+    }
+    .box-cards_card-new {
+        @apply xl:p-4 p-3 max-w-sm shadow-[0px_0px_16px_5px_rgba(0,_0,_0,_0.1)] rounded-2xl w-full h-full md:h-40 md:w-40;
+    }
+    .box-cards_card-div {
+        @apply flex rounded-lg h-full xl:p-4 flex-col;
+    }
+    .box-cards_card-div-new {
+        @apply flex rounded-lg h-full xl:p-4 flex-col w-full items-center justify-center;
+    }
+    .box-cards_card-icon {
+        @apply flex justify-center mb-3 text-(--title-color);
+    }
+    .box-cards_card-text-div {
+        @apply flex flex-col justify-between flex-grow;
+    }
+    .box-cards_card-text-div-new {
+        @apply uppercase w-full;
+    }
+    .box-cards_card-text {
+        @apply leading-relaxed text-sm text-(--text-color-gray);
+    }
+    .cards-link {
+        @apply inline-flex items-center w-fit;
+    }
+    .cards-button {
+        @apply hover:bg-(--button-color-hover) bg-(--button-color) text-white py-2 px-8 rounded-full cursor-pointer mt-2 hover:scale-99 transition;
+    }
+    /* Fim das classes dos Cards */
+
+    /* → ------------ Classes do Footer ------------ ← */
+    .box-footer {
+        @apply flex-row md:p-24 p-15 bg-black text-(--text-color-gray-light);
+    }
+
+    .box-footer_div {
+        @apply md:flex justify-between;
+    }
+    
+    .box-footer_h2 {
+        @apply mb-4 font-medium;
+    }
+
+    .box-footer_ul {
+        @apply mb-10;
+    }
+
+    .box-footer_span {
+        @apply mt-10;
+    }
+
+    /* Fim das Classes do Footer */
+
+    /* Recuperômetro */
+
+    .recovermeter {
+        @apply flex flex-col gap-2 overflow-scroll md:overflow-auto py-15 flex-wrap justify-center;
+    }
+
+    .recovermeter__box {
+        @apply p-2 md:p-1 flex flex-col items-center gap-2 md:gap-3;
+    }
+
+    .recovermeter__main_title {
+        @apply uppercase md:text-3xl text-center;
+    }
+
+    .recovermeter__title {
+        @apply md:text-2xl uppercase text-(--bg-display-color) w-90 md:w-full text-center;
+    }
+
+    .recovermeter__numbers-div {
+        @apply flex text-3xl md:text-6xl xl:text-8xl gap-0.5;
+    }
+
+    .recovermeter__display_box {
+        @apply flex gap-2 md:gap-5 font-(family-name:--font-display) text-center p-2 md:p-4 rounded-md;
+    }
+    
+    .recovermeter__number_box {
+        @apply bg-(--bg-display-color) text-(--font-display-color) p-2 rounded-md shadow-[3px_2px_5px_2px_rgba(0,_0,_0,_0.3)];
+    }
+}

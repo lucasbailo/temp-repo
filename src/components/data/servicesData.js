@@ -1,0 +1,85 @@
+import { ChartBar, CurrencyCircleDollar, Receipt, Scales, ShieldCheck } from '@phosphor-icons/react'
+import ComplienceImg  from '../../assets/images/model/compliance-tributario.jpg'
+import ConsultoriaImg  from '../../assets/images/model/consultoria-tributaria.jpg'
+import CreditosImg  from '../../assets/images/model/creditos-icms.jpg'
+import RecuperacaoImg  from '../../assets/images/model/recuperacao-de-tributos-federais.jpg'
+import ServicosImg  from '../../assets/images/model/servicos-juridicos.jpg'
+
+
+export const serviceData = [
+  {
+    id: 'consultoria-tributaria',
+    icon: ChartBar,
+    title: 'Consultoria Tributária',
+    description: 'Conte com nossa expertise para uma gestão tributária eficiente e segura. Identificamos oportunidades para reduzir encargos fiscais e garantir a conformidade da sua empresa com a legislação vigente.',
+    button: {
+      href: '/consultoria-tributaria',
+      action: 'Saiba mais',
+    },
+    content_one: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque, sem nec bibendum facilisis, lacus risus malesuada risus, in scelerisque sem leo non orci. Nam lobortis consectetur dictum. Maecenas accumsan sapien at quam pellentesque, quis venenatis odio gravida. Suspendisse potenti. Ut ipsum dui, venenatis et velit et, ornare dapibus orci. Duis nec orci lobortis, semper nibh aliquam, eleifend tortor. Aenean sed ligula porttitor, hendrerit nisl aliquam, ultrices justo. Vivamus lorem lectus, malesuada nec ex id, volutpat fringilla risus. Duis porttitor vulputate efficitur.',
+    content_two: 'Donec metus erat, sodales sed nulla ut, fermentum pellentesque elit. Praesent tincidunt viverra felis nec consectetur. Quisque ac tortor eget lectus interdum elementum. Nam molestie velit nec orci faucibus volutpat. Nullam ut massa nec nisl luctus blandit at quis arcu. Vestibulum et nisi ut libero lobortis sollicitudin. Phasellus aliquam, metus in posuere tincidunt, felis mi semper tellus, quis bibendum nisl nunc quis libero. Pellentesque eleifend libero nec viverra ullamcorper. Phasellus in sodales turpis, in auctor urna.',
+    content_three: 'Vivamus commodo ex quam, a pulvinar velit eleifend ac. Donec eu hendrerit mauris. Nam fermentum sollicitudin rutrum. Ut varius, lacus id lacinia posuere, augue libero tempor libero, id vulputate lacus turpis eget nisi. Ut iaculis urna lorem, at sagittis sem pharetra at. Duis fermentum fringilla lectus ac consectetur. Phasellus in scelerisque dolor. Nulla aliquam in augue ultricies aliquet. Sed felis lorem, auctor vitae nulla eu, rhoncus vestibulum urna. Aliquam aliquam ornare lorem nec sagittis. Etiam finibus ex et dolor congue, at semper urna rhoncus. Donec lobortis urna sed quam ultricies volutpat vitae sed nisi.',
+    content_four: 'Aenean tincidunt tortor vitae dui blandit dapibus. Quisque quis est est. Quisque sit amet metus ac elit pulvinar blandit. Nulla lacinia id dui non ornare. Vivamus ut ullamcorper mauris. Suspendisse vel enim at quam varius placerat mollis ut eros. Etiam fringilla risus nec lacus malesuada, non facilisis augue luctus. Integer vulputate, orci quis rutrum rutrum, ipsum justo sodales justo, quis iaculis libero mi sed dolor. Etiam molestie quam id felis sodales, sit amet luctus massa dapibus.',
+    image: ConsultoriaImg,
+  },
+  {
+    id: 'recuperacao-tributos-federais',
+    icon: Receipt,
+    title: 'Recuperação de Tributos Federais',
+    description: 'Recupere impostos pagos a mais e aumente sua lucratividade. Identificamos tributos federais pagos indevidamente e auxiliamos na recuperação desses valores, garantindo que sua empresa aproveite todos os benefícios fiscais disponíveis.',
+    button: {
+      href: '/recuperacao-tributos-federais',
+      action: 'Saiba mais',
+    },
+    content_one: 'Aliquam congue eget mi eleifend facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer sit amet lorem nec risus pharetra ultrices luctus vel eros. Sed luctus ex nec ultrices lacinia. Sed interdum metus mi, sit amet sollicitudin ipsum sagittis ut. Cras erat lorem, lobortis lobortis lobortis ut, ornare non enim. Nulla sit amet fermentum sem. Etiam nec libero tempor, vestibulum elit ac, rutrum metus. Donec finibus vehicula lectus nec laoreet. Nam convallis commodo egestas. In eu augue nisl. Vivamus id velit odio. In lobortis ante in elit venenatis interdum.',
+    content_two: 'Sed sit amet neque sit amet neque posuere interdum at quis felis. Suspendisse malesuada risus vestibulum rhoncus aliquet. Etiam pellentesque vel nulla eu ullamcorper. Fusce suscipit, eros in porta volutpat, tellus est viverra risus, vel dignissim neque dolor ut dui. Praesent pretium velit eu est eleifend, quis suscipit ligula gravida. Fusce lectus ex, imperdiet non tellus et, mattis aliquam elit. Etiam pharetra diam et odio sollicitudin, vitae sagittis elit vestibulum. Ut accumsan ex a sem semper sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque id lorem non est placerat blandit. Ut venenatis ante nunc, non blandit nulla pharetra non. Cras venenatis justo vel felis feugiat, nec tristique orci commodo. Donec iaculis mi at facilisis placerat. Cras vehicula ipsum et lorem cursus pellentesque eget id leo.',
+    content_three: 'Curabitur a lorem a libero porta convallis ac ac odio. Nam sed pellentesque arcu. Sed pellentesque ultricies molestie. Quisque varius velit in nulla condimentum, a blandit dui congue. Integer sagittis consequat semper. Sed a lobortis erat. Duis eget interdum nisi, in fermentum ante. Cras pharetra, felis et porta ornare, ex diam consectetur turpis, id scelerisque nulla quam ut magna. Nullam pellentesque fermentum lacus ac eleifend. Cras fringilla nulla eu mauris vehicula elementum. Fusce fringilla augue aliquet tristique malesuada. Sed efficitur neque ac varius tincidunt. Quisque pellentesque, risus ornare cursus iaculis, odio mi cursus turpis, at rhoncus neque sem vitae neque. In sed mollis augue. Phasellus nec massa ex. Ut at lectus neque.',
+    content_four: 'Cras id ornare risus. Quisque dictum nisl ac turpis placerat placerat. Donec eget consequat tellus, non condimentum mauris. Praesent pharetra interdum cursus. Aliquam fermentum dui leo, at imperdiet erat consequat sit amet. In consequat eget elit sit amet porta. Sed vitae sagittis ante. Nullam tincidunt semper quam eget venenatis. Sed viverra vel odio eget rhoncus. Mauris eget nisl vehicula tortor cursus suscipit. Suspendisse feugiat ac felis ut aliquam. Nulla eget pharetra enim, vitae sagittis nunc. Praesent in purus posuere, egestas ipsum vitae, scelerisque mi. Donec dui magna, pharetra vel justo id, hendrerit ultricies risus. Nam quis enim et metus porttitor pulvinar.',
+    image: RecuperacaoImg,
+  },
+  {
+    id: 'recuperacao-creditos-icms',
+    icon: CurrencyCircleDollar,
+    title: 'Recuperação de Créditos de ICMS',
+    description: 'Realizamos uma análise detalhada das operações fiscais da sua empresa para identificar e recuperar créditos de ICMS, assegurando o correto aproveitamento de benefícios fiscais e melhorando a saúde financeira do seu negócio.',
+    button: {
+      href: '/recuperacao-creditos-icms',
+      action: 'Saiba mais',
+    },
+    content_one: 'Maecenas nec ante a ipsum tempor egestas. Pellentesque tempor pulvinar odio, sit amet ullamcorper massa pulvinar non. Fusce felis elit, volutpat ut rutrum in, porta sit amet risus. Integer id consectetur quam, id finibus erat. Aenean viverra nisl orci, quis tristique dolor placerat quis. Suspendisse et hendrerit justo. Vestibulum eleifend accumsan porttitor. Sed finibus elementum sollicitudin. Vivamus tincidunt non lectus sit amet convallis. Morbi sollicitudin gravida odio vel vestibulum. Nulla laoreet nisl augue, sit amet dictum nisl molestie in. Quisque sit amet mi tincidunt, vestibulum ipsum quis, efficitur neque. Donec commodo lobortis nunc quis luctus. Duis vitae vestibulum tortor. Phasellus ut posuere enim, vel facilisis arcu.',
+    content_two: 'Nunc tortor turpis, consectetur dictum vestibulum et, sodales at dui. Maecenas luctus velit lectus, at hendrerit velit congue a. Duis tincidunt nisi quis diam varius, non mattis ex tincidunt. Etiam eleifend eu mauris quis vehicula. Pellentesque eu libero tortor. Ut scelerisque pharetra imperdiet. Etiam pharetra pellentesque nibh, et varius tellus pulvinar eget. Sed aliquam magna at velit facilisis varius. Nunc vestibulum tincidunt leo, sed fermentum est interdum sit amet.',
+    content_three: 'Cras orci odio, efficitur nec ligula quis, pretium accumsan sem. Mauris blandit lacus eget lacinia placerat. Ut interdum aliquet augue, quis cursus urna efficitur sed. Maecenas eros nulla, dictum quis blandit nec, facilisis in neque. Suspendisse potenti. Vestibulum iaculis nunc laoreet diam tincidunt auctor. Maecenas ligula mi, finibus at enim eu, molestie porttitor purus. Nunc congue sed mi quis placerat. Mauris dignissim massa vitae molestie porttitor. Nulla eget diam quam. Aenean a leo dui. Suspendisse porta risus nec diam ullamcorper tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum laoreet dignissim nisi. Curabitur condimentum nunc posuere enim ultricies lacinia. Etiam gravida nec tellus aliquet gravida.',
+    content_four: 'Proin convallis feugiat dolor, eu lacinia elit tincidunt vel. In sit amet ex aliquet, convallis magna sed, pulvinar nibh. Nulla accumsan congue fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec magna elit, scelerisque nec ligula non, cursus commodo magna. Aenean vitae egestas ipsum. Proin et lacus sed lectus elementum suscipit. Aliquam eu orci eu diam pretium feugiat. Praesent sagittis aliquet erat, gravida vestibulum nunc tempus luctus.',
+    image: CreditosImg,
+  },
+  {
+    id: 'compliance-tributario',
+    icon: ShieldCheck,
+    title: 'Compliance Tributário',
+    description: 'Implementamos processos para garantir que sua empresa esteja sempre alinhada às exigências fiscais, evitando riscos, multas e penalidades. Reduza incertezas e atue com tranquilidade no mercado.',
+    button: {
+      href: '/compliance-tributario',
+      action: 'Saiba mais',
+    },
+    content_one: 'Vestibulum purus tortor, vehicula quis suscipit vel, eleifend eu neque. Sed dapibus turpis rhoncus erat facilisis malesuada. Pellentesque hendrerit, neque at gravida pulvinar, elit massa tincidunt justo, vel finibus orci arcu nec dui. Proin eget posuere nisl. Duis viverra accumsan eleifend. Nulla eu aliquam dui. Curabitur ipsum tellus, pharetra eget eleifend in, tempor ac arcu. In quis odio semper, dignissim est id, lobortis leo. Sed vestibulum neque vel massa auctor ultrices. Phasellus semper mattis tincidunt. Aenean suscipit diam libero, id porttitor sapien iaculis vitae. Fusce lorem dolor, finibus sit amet orci ac, convallis egestas erat. Nulla in sapien maximus, luctus orci non, vulputate sem.',
+    content_two: 'Quisque at molestie dolor, at lacinia nulla. Ut a vulputate sapien. Nunc eget nisl elit. Vestibulum quis velit a arcu fringilla tristique. In ut lorem id dolor convallis maximus. Donec metus augue, luctus eu ornare in, interdum et nunc. Morbi ut mattis lorem. In vitae fringilla libero, eu facilisis eros. Phasellus ac leo accumsan, iaculis diam nec, ornare magna. Ut tempor massa ac leo sagittis, eget volutpat metus posuere. Praesent condimentum pellentesque magna eu dictum. Phasellus rhoncus, metus in ullamcorper venenatis, arcu neque consequat nisl, sit amet suscipit justo purus at urna. Donec placerat, ex quis semper hendrerit, justo purus posuere dui, sed finibus dui purus eu libero. Etiam sed quam quis velit mattis molestie varius et risus. Morbi tincidunt orci nulla, consequat faucibus turpis luctus quis.',
+    content_three: 'Suspendisse in pulvinar nibh. Pellentesque sagittis, ipsum sit amet congue laoreet, erat arcu egestas nunc, sed vestibulum diam elit eget nisi. Nam pulvinar eu sapien sit amet bibendum. Mauris dignissim lobortis luctus. Integer ligula augue, finibus imperdiet consectetur ac, auctor sagittis est. Vivamus consectetur, tellus eget convallis dignissim, diam orci imperdiet mi, consectetur auctor nibh magna nec neque. Praesent ut urna id orci rhoncus tincidunt. Aliquam convallis vestibulum arcu et vehicula. Nam mollis semper lacinia. Praesent sed purus sit amet ex convallis dignissim vel quis nibh. Vestibulum nulla mi, laoreet vitae erat nec, ultrices commodo quam. Nulla facilisi. Etiam maximus luctus arcu, sed lobortis nunc cursus a. Cras non urna id urna varius cursus. Mauris laoreet orci quis odio fermentum, nec laoreet turpis feugiat. Nullam at consequat leo, ac aliquam eros.',
+    content_four: 'Nulla volutpat, felis a tempor eleifend, urna urna posuere ligula, eget euismod orci nunc ornare mauris. Cras tortor orci, volutpat non felis a, ullamcorper rutrum libero. Nullam quis varius dolor, interdum egestas nisl. Sed mattis pulvinar eros, nec imperdiet leo euismod eget. Nulla gravida imperdiet leo, nec finibus lorem pulvinar hendrerit. Cras luctus, ipsum nec volutpat interdum, erat enim pellentesque ligula, id blandit leo leo sit amet ante. Praesent sed velit in velit venenatis posuere quis vestibulum leo. Aenean pulvinar odio augue, nec faucibus ligula commodo eget. In non nisi non est viverra euismod eu ac lorem. Nullam efficitur finibus fermentum.',
+    image: ComplienceImg,
+  },
+  {
+    id: 'servicos-juridicos',
+    icon: Scales,
+    title: 'Serviços Jurídicos',
+    description: 'Nossa equipe especializada oferece assessoria jurídica em questões tributárias, societárias e empresariais, proporcionando segurança e soluções eficientes para sua empresa.',
+    button: {
+      href: '/servicos-juridicos',
+      action: 'Fale conosco',
+    },
+    content_one: 'In cursus, ex eu iaculis aliquam, velit urna malesuada massa, vitae condimentum ligula metus vitae nunc. Quisque nunc arcu, tristique in malesuada at, vehicula ut nunc. Nulla accumsan aliquet ipsum, in convallis arcu cursus eget. Sed cursus, neque at mattis facilisis, risus nibh gravida urna, sit amet sagittis sapien mi quis tortor. Ut egestas velit enim, et tempus ex fringilla eu. Cras placerat lorem vel quam elementum vehicula. Integer sed lectus vel nulla tincidunt laoreet in sed risus. Mauris auctor nisi eu est luctus, sit amet gravida nibh commodo. Curabitur ac tristique leo. Etiam erat massa, rhoncus consectetur interdum dictum, tempus nec elit.',
+    content_two: 'Morbi dictum tempus auctor. Pellentesque sit amet sollicitudin nisl. Etiam eu elementum purus, vitae aliquet tortor. Quisque et sem quis odio accumsan suscipit. Curabitur consectetur fermentum ante, ac eleifend arcu volutpat ut. Fusce porttitor nibh sapien, et feugiat velit tristique sed. Maecenas metus elit, rhoncus nec ipsum vitae, tempor euismod sapien. Phasellus fermentum efficitur quam, vel laoreet lorem facilisis ut. Cras at congue nibh. Nam tempus auctor neque vitae hendrerit. Nam bibendum ante vitae diam sollicitudin fermentum. Mauris ornare magna urna, sit amet condimentum nisl fringilla vitae. Aenean augue urna, aliquam et dolor sit amet, interdum luctus ipsum.',
+    content_three: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et elementum erat, varius pulvinar velit. Vivamus hendrerit purus et nisi scelerisque maximus. Etiam dapibus venenatis ultrices. Aenean condimentum convallis lorem, laoreet ultricies sem pellentesque quis. Nam eleifend, nisi non ultricies consequat, magna odio volutpat tellus, ac suscipit metus mi at quam. Curabitur at nulla vitae tortor posuere pharetra vitae sit amet enim. Etiam faucibus libero in nisi sodales dapibus. Nulla dictum libero non lacus ultricies, id lacinia diam fermentum. Nullam in consectetur leo, vitae sollicitudin mi. Nunc iaculis pharetra felis, commodo ultrices enim convallis ut. Fusce in elit et velit vehicula viverra in et elit. Etiam tellus odio, feugiat at nulla in, faucibus hendrerit orci. Vivamus mollis, nunc non feugiat efficitur, odio leo mattis purus, condimentum consectetur quam risus eget sapien. Suspendisse ut vestibulum est. Morbi condimentum nibh ac lacus dapibus aliquam. Pellentesque ullamcorper orci ut metus tincidunt, dignissim molestie odio lacinia.',
+    content_four: 'Fusce vel ultricies sem, vel convallis nibh. Cras sem metus, luctus eget turpis in, volutpat posuere diam. Praesent eget viverra leo. Donec molestie pretium odio at facilisis. Etiam in ullamcorper diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur commodo nisl posuere turpis commodo lobortis. Nam et urna quam. Nullam eget neque sed tellus ullamcorper luctus at quis felis. Duis condimentum nec ligula quis ornare. Mauris vitae eros quis orci feugiat convallis vitae sit amet dui. Aliquam dictum volutpat turpis nec convallis. Pellentesque auctor ante quis vehicula varius.',
+    image: ServicosImg,
+  },
+]
